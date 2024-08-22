@@ -1,1 +1,8 @@
-<p>cart-page works!</p>
+<button (click)="toggleMenu(); preventCloseOnClick()">Toggle Menu</button>
+<ul (click)="preventCloseOnClick()" *ngIf="menuOpen">
+  <li>Menu 1</li>
+  <li>Menu 2</li>
+  <li>Menu 3</li>
+  <li>Menu 4</li>
+  <li>Menu 5</li>
+</ul>
