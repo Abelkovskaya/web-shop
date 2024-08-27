@@ -1,1 +1,10 @@
 <p>main-page works!</p>
+
+<div cdkDropList cdkDropListOrientation="mixed" class="example-list" (cdkDropListDropped)="drop($event)">
+    @for (item of items; track item) {
+      <div class="example-box" cdkDrag>
+        
+        <img src="{{item}}">
+    </div>
+    }
+  </div>
